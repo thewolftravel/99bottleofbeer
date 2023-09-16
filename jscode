@@ -14,10 +14,12 @@ function sing() {
         if (numberOfBottles === 0){
         console.log("No more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, 99 bottles of beer on the wall.");
         } else if (numberOfBottles === 1) {
-            bottleWord = "bottle";
-            newNumber = "no more";
+            console.log("1 bottle of beer on the wall, 1 bottle of beer. Take one down and pass it around, no more bottles of beer on the wall.");
+        } else  if (numberOfBottles === 2) {
+            console.log(numberOfBottles + " " + bottleWord + " of beer on the wall, " + numberOfBottles + " " + bottleWord + " of beer. Take one down and pass it around, " + newNumber + " bottle  of beer on the wall.");
+        
         } else {
-            console.log(numberOfBottles + " bottles of beer on the wall, " + numberOfBottles + " bottles of beer. " + "Take one down and pass it around, " + newNumber + " bottles of beer on the wall.");
+            console.log(numberOfBottles + " " + bottleWord + " of beer on the wall, " + numberOfBottles + " " + bottleWord + " of beer. Take one down and pass it around, " + newNumber + " " + bottleWord + " of beer on the wall.");
                 }
 
 // -- means -1 from numberOfBottles so it reduces it until it's 1 or 0
