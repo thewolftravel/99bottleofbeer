@@ -1,0 +1,26 @@
+var numberOfBottles = 99;
+
+function sing() {
+// loop: while (these conditions are true it will run) if false it will stop
+    while (numberOfBottles >= 0){
+
+// variable to define the number presented in the last sentence
+        var newNumber = numberOfBottles - 1;
+
+// adaptable variable: will change according to the conditions in if statements = 1
+        var bottleWord = "bottles"
+
+// function: starts checking 0, then moves on to 1, and finally loops
+        if (numberOfBottles === 0){
+        console.log("No more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, 99 bottles of beer on the wall.");
+        } else if (numberOfBottles === 1) {
+            bottleWord = "bottle";
+            newNumber = "no more";
+        } else {
+            console.log(numberOfBottles + " bottles of beer on the wall, " + numberOfBottles + " bottles of beer. " + "Take one down and pass it around, " + newNumber + " bottles of beer on the wall.");
+                }
+
+// -- means -1 from numberOfBottles so it reduces it until it's 1 or 0
+    numberOfBottles--;
+        }
+    }
